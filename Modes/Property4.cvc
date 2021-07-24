@@ -1,0 +1,329 @@
+c_value_index1_0_0: BITVECTOR(64) ;
+c_value_index1_0_1: BITVECTOR(64) ;
+c_value_index1_0_2: BITVECTOR(64) ;
+c_value_index1_0_3: BITVECTOR(64) ;
+c_value_index1_0_4: BITVECTOR(64) ;
+c_value_index1_1_0: BITVECTOR(64) ;
+c_value_index1_1_1: BITVECTOR(64) ;
+c_value_index1_1_2: BITVECTOR(64) ;
+c_value_index1_1_3: BITVECTOR(64) ;
+c_value_index1_1_4: BITVECTOR(64) ;
+
+x_value_index1_0: BITVECTOR(32) ;
+x_value_index1_1: BITVECTOR(32) ;
+x_value_index1_2: BITVECTOR(32) ;
+x_value_index1_3: BITVECTOR(32) ;
+
+afterxor_value_index1_0_0: BITVECTOR(64) ;
+afterxor_value_index1_0_1: BITVECTOR(64) ;
+afterxor_value_index1_0_2: BITVECTOR(64) ;
+afterxor_value_index1_0_3: BITVECTOR(64) ;
+afterxor_value_index1_0_4: BITVECTOR(64) ;
+afterxor_value_index1_1_0: BITVECTOR(64) ;
+afterxor_value_index1_1_1: BITVECTOR(64) ;
+afterxor_value_index1_1_2: BITVECTOR(64) ;
+afterxor_value_index1_1_3: BITVECTOR(64) ;
+afterxor_value_index1_1_4: BITVECTOR(64) ;
+
+middlesbox_1_value_index1_0_0: BITVECTOR(64) ;
+middlesbox_1_value_index1_0_1: BITVECTOR(64) ;
+middlesbox_1_value_index1_0_2: BITVECTOR(64) ;
+middlesbox_1_value_index1_0_3: BITVECTOR(64) ;
+middlesbox_1_value_index1_0_4: BITVECTOR(64) ;
+
+middlesbox_2_value_index1_0_0: BITVECTOR(64) ;
+middlesbox_2_value_index1_0_1: BITVECTOR(64) ;
+middlesbox_2_value_index1_0_2: BITVECTOR(64) ;
+middlesbox_2_value_index1_0_3: BITVECTOR(64) ;
+middlesbox_2_value_index1_0_4: BITVECTOR(64) ;
+
+middlesbox_3_value_index1_0_0: BITVECTOR(64) ;
+middlesbox_3_value_index1_0_1: BITVECTOR(64) ;
+middlesbox_3_value_index1_0_2: BITVECTOR(64) ;
+middlesbox_3_value_index1_0_3: BITVECTOR(64) ;
+middlesbox_3_value_index1_0_4: BITVECTOR(64) ;
+
+middlesbox_4_value_index1_0_0: BITVECTOR(64) ;
+middlesbox_4_value_index1_0_1: BITVECTOR(64) ;
+middlesbox_4_value_index1_0_2: BITVECTOR(64) ;
+middlesbox_4_value_index1_0_3: BITVECTOR(64) ;
+middlesbox_4_value_index1_0_4: BITVECTOR(64) ;
+
+aftersbox_value_index1_0_0: BITVECTOR(64) ;
+aftersbox_value_index1_0_1: BITVECTOR(64) ;
+aftersbox_value_index1_0_2: BITVECTOR(64) ;
+aftersbox_value_index1_0_3: BITVECTOR(64) ;
+aftersbox_value_index1_0_4: BITVECTOR(64) ;
+
+middlelinearlayer_value_index1_0_0: BITVECTOR(64) ;
+middlelinearlayer_value_index1_0_1: BITVECTOR(64) ;
+middlelinearlayer_value_index1_0_2: BITVECTOR(64) ;
+middlelinearlayer_value_index1_0_3: BITVECTOR(64) ;
+middlelinearlayer_value_index1_0_4: BITVECTOR(64) ;
+
+afterlinearlayer_value_index1_0_0: BITVECTOR(64) ;
+afterlinearlayer_value_index1_0_1: BITVECTOR(64) ;
+afterlinearlayer_value_index1_0_2: BITVECTOR(64) ;
+afterlinearlayer_value_index1_0_3: BITVECTOR(64) ;
+afterlinearlayer_value_index1_0_4: BITVECTOR(64) ;
+
+ASSERT( (afterxor_value_index1_0_0[31:0] = BVXOR(c_value_index1_0_0[31:0],x_value_index1_0)) OR (afterxor_value_index1_0_0[31:0] = BVXOR(c_value_index1_0_0[31:0],x_value_index1_1)) OR (afterxor_value_index1_0_0[31:0] = BVXOR(c_value_index1_0_0[31:0],x_value_index1_2)) OR (afterxor_value_index1_0_0[31:0] = BVXOR(c_value_index1_0_0[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_0_1[31:0] = BVXOR(c_value_index1_0_1[31:0],x_value_index1_0)) OR (afterxor_value_index1_0_1[31:0] = BVXOR(c_value_index1_0_1[31:0],x_value_index1_1)) OR (afterxor_value_index1_0_1[31:0] = BVXOR(c_value_index1_0_1[31:0],x_value_index1_2)) OR (afterxor_value_index1_0_1[31:0] = BVXOR(c_value_index1_0_1[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_0_2[31:0] = BVXOR(c_value_index1_0_2[31:0],x_value_index1_0)) OR (afterxor_value_index1_0_2[31:0] = BVXOR(c_value_index1_0_2[31:0],x_value_index1_1)) OR (afterxor_value_index1_0_2[31:0] = BVXOR(c_value_index1_0_2[31:0],x_value_index1_2)) OR (afterxor_value_index1_0_2[31:0] = BVXOR(c_value_index1_0_2[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_0_3[31:0] = BVXOR(c_value_index1_0_3[31:0],x_value_index1_0)) OR (afterxor_value_index1_0_3[31:0] = BVXOR(c_value_index1_0_3[31:0],x_value_index1_1)) OR (afterxor_value_index1_0_3[31:0] = BVXOR(c_value_index1_0_3[31:0],x_value_index1_2)) OR (afterxor_value_index1_0_3[31:0] = BVXOR(c_value_index1_0_3[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_0_4[31:0] = BVXOR(c_value_index1_0_4[31:0],x_value_index1_0)) OR (afterxor_value_index1_0_4[31:0] = BVXOR(c_value_index1_0_4[31:0],x_value_index1_1)) OR (afterxor_value_index1_0_4[31:0] = BVXOR(c_value_index1_0_4[31:0],x_value_index1_2)) OR (afterxor_value_index1_0_4[31:0] = BVXOR(c_value_index1_0_4[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_1_0[31:0] = BVXOR(c_value_index1_1_0[31:0],x_value_index1_0)) OR (afterxor_value_index1_1_0[31:0] = BVXOR(c_value_index1_1_0[31:0],x_value_index1_1)) OR (afterxor_value_index1_1_0[31:0] = BVXOR(c_value_index1_1_0[31:0],x_value_index1_2)) OR (afterxor_value_index1_1_0[31:0] = BVXOR(c_value_index1_1_0[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_1_1[31:0] = BVXOR(c_value_index1_1_1[31:0],x_value_index1_0)) OR (afterxor_value_index1_1_1[31:0] = BVXOR(c_value_index1_1_1[31:0],x_value_index1_1)) OR (afterxor_value_index1_1_1[31:0] = BVXOR(c_value_index1_1_1[31:0],x_value_index1_2)) OR (afterxor_value_index1_1_1[31:0] = BVXOR(c_value_index1_1_1[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_1_2[31:0] = BVXOR(c_value_index1_1_2[31:0],x_value_index1_0)) OR (afterxor_value_index1_1_2[31:0] = BVXOR(c_value_index1_1_2[31:0],x_value_index1_1)) OR (afterxor_value_index1_1_2[31:0] = BVXOR(c_value_index1_1_2[31:0],x_value_index1_2)) OR (afterxor_value_index1_1_2[31:0] = BVXOR(c_value_index1_1_2[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_1_3[31:0] = BVXOR(c_value_index1_1_3[31:0],x_value_index1_0)) OR (afterxor_value_index1_1_3[31:0] = BVXOR(c_value_index1_1_3[31:0],x_value_index1_1)) OR (afterxor_value_index1_1_3[31:0] = BVXOR(c_value_index1_1_3[31:0],x_value_index1_2)) OR (afterxor_value_index1_1_3[31:0] = BVXOR(c_value_index1_1_3[31:0],x_value_index1_3)) ) ;
+ASSERT( (afterxor_value_index1_1_4[31:0] = BVXOR(c_value_index1_1_4[31:0],x_value_index1_0)) OR (afterxor_value_index1_1_4[31:0] = BVXOR(c_value_index1_1_4[31:0],x_value_index1_1)) OR (afterxor_value_index1_1_4[31:0] = BVXOR(c_value_index1_1_4[31:0],x_value_index1_2)) OR (afterxor_value_index1_1_4[31:0] = BVXOR(c_value_index1_1_4[31:0],x_value_index1_3)) ) ;
+
+ASSERT( afterxor_value_index1_0_0[63:32] = c_value_index1_0_0[63:32] ) ;
+ASSERT( afterxor_value_index1_0_1[63:32] = c_value_index1_0_1[63:32] ) ;
+ASSERT( afterxor_value_index1_0_2[63:32] = c_value_index1_0_2[63:32] ) ;
+ASSERT( afterxor_value_index1_0_3[63:32] = c_value_index1_0_3[63:32] ) ;
+ASSERT( afterxor_value_index1_0_4[63:32] = c_value_index1_0_4[63:32] ) ;
+ASSERT( afterxor_value_index1_1_0[63:32] = c_value_index1_1_0[63:32] ) ;
+ASSERT( afterxor_value_index1_1_1[63:32] = c_value_index1_1_1[63:32] ) ;
+ASSERT( afterxor_value_index1_1_2[63:32] = c_value_index1_1_2[63:32] ) ;
+ASSERT( afterxor_value_index1_1_3[63:32] = c_value_index1_1_3[63:32] ) ;
+ASSERT( afterxor_value_index1_1_4[63:32] = c_value_index1_1_4[63:32] ) ;
+
+ASSERT( middlesbox_1_value_index1_0_0 = BVXOR(afterxor_value_index1_0_0,afterxor_value_index1_0_4) ) ;
+ASSERT( middlesbox_1_value_index1_0_1 = afterxor_value_index1_0_1 ) ;
+ASSERT( middlesbox_1_value_index1_0_2 = BVXOR(afterxor_value_index1_0_2,afterxor_value_index1_0_1) ) ;
+ASSERT( middlesbox_1_value_index1_0_3 = afterxor_value_index1_0_3 ) ;
+ASSERT( middlesbox_1_value_index1_0_4 = BVXOR(afterxor_value_index1_0_4,afterxor_value_index1_0_3) ) ;
+
+ASSERT( middlesbox_2_value_index1_0_0 = (~middlesbox_1_value_index1_0_0) & middlesbox_1_value_index1_0_1 ) ;
+ASSERT( middlesbox_2_value_index1_0_1 = (~middlesbox_1_value_index1_0_1) & middlesbox_1_value_index1_0_2 ) ;
+ASSERT( middlesbox_2_value_index1_0_2 = (~middlesbox_1_value_index1_0_2) & middlesbox_1_value_index1_0_3 ) ;
+ASSERT( middlesbox_2_value_index1_0_3 = (~middlesbox_1_value_index1_0_3) & middlesbox_1_value_index1_0_4 ) ;
+ASSERT( middlesbox_2_value_index1_0_4 = (~middlesbox_1_value_index1_0_4) & middlesbox_1_value_index1_0_0 ) ;
+
+ASSERT( middlesbox_3_value_index1_0_0 = BVXOR(middlesbox_1_value_index1_0_0,middlesbox_2_value_index1_0_1) ) ;
+ASSERT( middlesbox_3_value_index1_0_1 = BVXOR(middlesbox_1_value_index1_0_1,middlesbox_2_value_index1_0_2) ) ;
+ASSERT( middlesbox_3_value_index1_0_2 = BVXOR(middlesbox_1_value_index1_0_2,middlesbox_2_value_index1_0_3) ) ;
+ASSERT( middlesbox_3_value_index1_0_3 = BVXOR(middlesbox_1_value_index1_0_3,middlesbox_2_value_index1_0_4) ) ;
+ASSERT( middlesbox_3_value_index1_0_4 = BVXOR(middlesbox_1_value_index1_0_4,middlesbox_2_value_index1_0_0) ) ;
+
+ASSERT( middlesbox_4_value_index1_0_0 = BVXOR(middlesbox_3_value_index1_0_0,middlesbox_3_value_index1_0_4) ) ;
+ASSERT( middlesbox_4_value_index1_0_1 = BVXOR(middlesbox_3_value_index1_0_0,middlesbox_3_value_index1_0_1) ) ;
+ASSERT( middlesbox_4_value_index1_0_2 = middlesbox_3_value_index1_0_2 ) ;
+ASSERT( middlesbox_4_value_index1_0_3 = BVXOR(middlesbox_3_value_index1_0_2,middlesbox_3_value_index1_0_3) ) ;
+ASSERT( middlesbox_4_value_index1_0_4 = middlesbox_3_value_index1_0_4 ) ;
+
+ASSERT( aftersbox_value_index1_0_0 = middlesbox_4_value_index1_0_0 ) ;
+ASSERT( aftersbox_value_index1_0_1 = middlesbox_4_value_index1_0_1 ) ;
+ASSERT( aftersbox_value_index1_0_2 = ~middlesbox_4_value_index1_0_2 ) ;
+ASSERT( aftersbox_value_index1_0_3 = middlesbox_4_value_index1_0_3 ) ;
+ASSERT( aftersbox_value_index1_0_4 = middlesbox_4_value_index1_0_4 ) ;
+
+ASSERT( middlelinearlayer_value_index1_0_0 = BVXOR(aftersbox_value_index1_0_0,aftersbox_value_index1_0_0[9:0]@aftersbox_value_index1_0_0[31:10]@aftersbox_value_index1_0_0[40:32]@aftersbox_value_index1_0_0[63:41]) ) ;
+ASSERT( afterlinearlayer_value_index1_0_0 = BVXOR(middlelinearlayer_value_index1_0_0,aftersbox_value_index1_0_0[45:32]@aftersbox_value_index1_0_0[63:46]@aftersbox_value_index1_0_0[13:0]@aftersbox_value_index1_0_0[31:14]) ) ;
+
+ASSERT( middlelinearlayer_value_index1_0_1 = BVXOR(aftersbox_value_index1_0_1,aftersbox_value_index1_0_1[30:0]@aftersbox_value_index1_0_1[31:31]@aftersbox_value_index1_0_1[61:32]@aftersbox_value_index1_0_1[63:62]) ) ;
+ASSERT( afterlinearlayer_value_index1_0_1 = BVXOR(middlelinearlayer_value_index1_0_1,aftersbox_value_index1_0_1[50:32]@aftersbox_value_index1_0_1[63:51]@aftersbox_value_index1_0_1[18:0]@aftersbox_value_index1_0_1[31:19]) ) ;
+
+ASSERT( middlelinearlayer_value_index1_0_2 = BVXOR(aftersbox_value_index1_0_2,aftersbox_value_index1_0_2[0:0]@aftersbox_value_index1_0_2[31:1]@aftersbox_value_index1_0_2[63:32]) ) ;
+ASSERT( afterlinearlayer_value_index1_0_2 = BVXOR(middlelinearlayer_value_index1_0_2,aftersbox_value_index1_0_2[34:32]@aftersbox_value_index1_0_2[63:35]@aftersbox_value_index1_0_2[2:0]@aftersbox_value_index1_0_2[31:3]) ) ;
+
+ASSERT( middlelinearlayer_value_index1_0_3 = BVXOR(aftersbox_value_index1_0_3,aftersbox_value_index1_0_3[36:32]@aftersbox_value_index1_0_3[63:37]@aftersbox_value_index1_0_3[4:0]@aftersbox_value_index1_0_3[31:5]) ) ;
+ASSERT( afterlinearlayer_value_index1_0_3 = BVXOR(middlelinearlayer_value_index1_0_3,aftersbox_value_index1_0_3[8:0]@aftersbox_value_index1_0_3[31:9]@aftersbox_value_index1_0_3[39:32]@aftersbox_value_index1_0_3[63:40]) ) ;
+
+ASSERT( middlelinearlayer_value_index1_0_4 = BVXOR(aftersbox_value_index1_0_4,aftersbox_value_index1_0_4[3:0]@aftersbox_value_index1_0_4[31:4]@aftersbox_value_index1_0_4[34:32]@aftersbox_value_index1_0_4[63:35]) ) ;
+ASSERT( afterlinearlayer_value_index1_0_4 = BVXOR(middlelinearlayer_value_index1_0_4,aftersbox_value_index1_0_4[51:32]@aftersbox_value_index1_0_4[63:52]@aftersbox_value_index1_0_4[19:0]@aftersbox_value_index1_0_4[31:20]) ) ;
+
+ASSERT( c_value_index1_1_0 = afterlinearlayer_value_index1_0_0 ) ;
+ASSERT( c_value_index1_1_1 = afterlinearlayer_value_index1_0_1 ) ;
+ASSERT( c_value_index1_1_2 = afterlinearlayer_value_index1_0_2 ) ;
+ASSERT( c_value_index1_1_3 = afterlinearlayer_value_index1_0_3 ) ;
+ASSERT( c_value_index1_1_4 = afterlinearlayer_value_index1_0_4 ) ;
+
+c_value_index2_0_0: BITVECTOR(64) ;
+c_value_index2_0_1: BITVECTOR(64) ;
+c_value_index2_0_2: BITVECTOR(64) ;
+c_value_index2_0_3: BITVECTOR(64) ;
+c_value_index2_0_4: BITVECTOR(64) ;
+c_value_index2_1_0: BITVECTOR(64) ;
+c_value_index2_1_1: BITVECTOR(64) ;
+c_value_index2_1_2: BITVECTOR(64) ;
+c_value_index2_1_3: BITVECTOR(64) ;
+c_value_index2_1_4: BITVECTOR(64) ;
+
+x_value_index2_0: BITVECTOR(32) ;
+x_value_index2_1: BITVECTOR(32) ;
+x_value_index2_2: BITVECTOR(32) ;
+x_value_index2_3: BITVECTOR(32) ;
+
+afterxor_value_index2_0_0: BITVECTOR(64) ;
+afterxor_value_index2_0_1: BITVECTOR(64) ;
+afterxor_value_index2_0_2: BITVECTOR(64) ;
+afterxor_value_index2_0_3: BITVECTOR(64) ;
+afterxor_value_index2_0_4: BITVECTOR(64) ;
+afterxor_value_index2_1_0: BITVECTOR(64) ;
+afterxor_value_index2_1_1: BITVECTOR(64) ;
+afterxor_value_index2_1_2: BITVECTOR(64) ;
+afterxor_value_index2_1_3: BITVECTOR(64) ;
+afterxor_value_index2_1_4: BITVECTOR(64) ;
+
+middlesbox_1_value_index2_0_0: BITVECTOR(64) ;
+middlesbox_1_value_index2_0_1: BITVECTOR(64) ;
+middlesbox_1_value_index2_0_2: BITVECTOR(64) ;
+middlesbox_1_value_index2_0_3: BITVECTOR(64) ;
+middlesbox_1_value_index2_0_4: BITVECTOR(64) ;
+
+middlesbox_2_value_index2_0_0: BITVECTOR(64) ;
+middlesbox_2_value_index2_0_1: BITVECTOR(64) ;
+middlesbox_2_value_index2_0_2: BITVECTOR(64) ;
+middlesbox_2_value_index2_0_3: BITVECTOR(64) ;
+middlesbox_2_value_index2_0_4: BITVECTOR(64) ;
+
+middlesbox_3_value_index2_0_0: BITVECTOR(64) ;
+middlesbox_3_value_index2_0_1: BITVECTOR(64) ;
+middlesbox_3_value_index2_0_2: BITVECTOR(64) ;
+middlesbox_3_value_index2_0_3: BITVECTOR(64) ;
+middlesbox_3_value_index2_0_4: BITVECTOR(64) ;
+
+middlesbox_4_value_index2_0_0: BITVECTOR(64) ;
+middlesbox_4_value_index2_0_1: BITVECTOR(64) ;
+middlesbox_4_value_index2_0_2: BITVECTOR(64) ;
+middlesbox_4_value_index2_0_3: BITVECTOR(64) ;
+middlesbox_4_value_index2_0_4: BITVECTOR(64) ;
+
+aftersbox_value_index2_0_0: BITVECTOR(64) ;
+aftersbox_value_index2_0_1: BITVECTOR(64) ;
+aftersbox_value_index2_0_2: BITVECTOR(64) ;
+aftersbox_value_index2_0_3: BITVECTOR(64) ;
+aftersbox_value_index2_0_4: BITVECTOR(64) ;
+
+middlelinearlayer_value_index2_0_0: BITVECTOR(64) ;
+middlelinearlayer_value_index2_0_1: BITVECTOR(64) ;
+middlelinearlayer_value_index2_0_2: BITVECTOR(64) ;
+middlelinearlayer_value_index2_0_3: BITVECTOR(64) ;
+middlelinearlayer_value_index2_0_4: BITVECTOR(64) ;
+
+afterlinearlayer_value_index2_0_0: BITVECTOR(64) ;
+afterlinearlayer_value_index2_0_1: BITVECTOR(64) ;
+afterlinearlayer_value_index2_0_2: BITVECTOR(64) ;
+afterlinearlayer_value_index2_0_3: BITVECTOR(64) ;
+afterlinearlayer_value_index2_0_4: BITVECTOR(64) ;
+
+ASSERT( (afterxor_value_index2_0_0[31:0] = BVXOR(c_value_index2_0_0[31:0],x_value_index2_0)) OR (afterxor_value_index2_0_0[31:0] = BVXOR(c_value_index2_0_0[31:0],x_value_index2_1)) OR (afterxor_value_index2_0_0[31:0] = BVXOR(c_value_index2_0_0[31:0],x_value_index2_2)) OR (afterxor_value_index2_0_0[31:0] = BVXOR(c_value_index2_0_0[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_0_1[31:0] = BVXOR(c_value_index2_0_1[31:0],x_value_index2_0)) OR (afterxor_value_index2_0_1[31:0] = BVXOR(c_value_index2_0_1[31:0],x_value_index2_1)) OR (afterxor_value_index2_0_1[31:0] = BVXOR(c_value_index2_0_1[31:0],x_value_index2_2)) OR (afterxor_value_index2_0_1[31:0] = BVXOR(c_value_index2_0_1[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_0_2[31:0] = BVXOR(c_value_index2_0_2[31:0],x_value_index2_0)) OR (afterxor_value_index2_0_2[31:0] = BVXOR(c_value_index2_0_2[31:0],x_value_index2_1)) OR (afterxor_value_index2_0_2[31:0] = BVXOR(c_value_index2_0_2[31:0],x_value_index2_2)) OR (afterxor_value_index2_0_2[31:0] = BVXOR(c_value_index2_0_2[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_0_3[31:0] = BVXOR(c_value_index2_0_3[31:0],x_value_index2_0)) OR (afterxor_value_index2_0_3[31:0] = BVXOR(c_value_index2_0_3[31:0],x_value_index2_1)) OR (afterxor_value_index2_0_3[31:0] = BVXOR(c_value_index2_0_3[31:0],x_value_index2_2)) OR (afterxor_value_index2_0_3[31:0] = BVXOR(c_value_index2_0_3[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_0_4[31:0] = BVXOR(c_value_index2_0_4[31:0],x_value_index2_0)) OR (afterxor_value_index2_0_4[31:0] = BVXOR(c_value_index2_0_4[31:0],x_value_index2_1)) OR (afterxor_value_index2_0_4[31:0] = BVXOR(c_value_index2_0_4[31:0],x_value_index2_2)) OR (afterxor_value_index2_0_4[31:0] = BVXOR(c_value_index2_0_4[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_1_0[31:0] = BVXOR(c_value_index2_1_0[31:0],x_value_index2_0)) OR (afterxor_value_index2_1_0[31:0] = BVXOR(c_value_index2_1_0[31:0],x_value_index2_1)) OR (afterxor_value_index2_1_0[31:0] = BVXOR(c_value_index2_1_0[31:0],x_value_index2_2)) OR (afterxor_value_index2_1_0[31:0] = BVXOR(c_value_index2_1_0[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_1_1[31:0] = BVXOR(c_value_index2_1_1[31:0],x_value_index2_0)) OR (afterxor_value_index2_1_1[31:0] = BVXOR(c_value_index2_1_1[31:0],x_value_index2_1)) OR (afterxor_value_index2_1_1[31:0] = BVXOR(c_value_index2_1_1[31:0],x_value_index2_2)) OR (afterxor_value_index2_1_1[31:0] = BVXOR(c_value_index2_1_1[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_1_2[31:0] = BVXOR(c_value_index2_1_2[31:0],x_value_index2_0)) OR (afterxor_value_index2_1_2[31:0] = BVXOR(c_value_index2_1_2[31:0],x_value_index2_1)) OR (afterxor_value_index2_1_2[31:0] = BVXOR(c_value_index2_1_2[31:0],x_value_index2_2)) OR (afterxor_value_index2_1_2[31:0] = BVXOR(c_value_index2_1_2[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_1_3[31:0] = BVXOR(c_value_index2_1_3[31:0],x_value_index2_0)) OR (afterxor_value_index2_1_3[31:0] = BVXOR(c_value_index2_1_3[31:0],x_value_index2_1)) OR (afterxor_value_index2_1_3[31:0] = BVXOR(c_value_index2_1_3[31:0],x_value_index2_2)) OR (afterxor_value_index2_1_3[31:0] = BVXOR(c_value_index2_1_3[31:0],x_value_index2_3)) ) ;
+ASSERT( (afterxor_value_index2_1_4[31:0] = BVXOR(c_value_index2_1_4[31:0],x_value_index2_0)) OR (afterxor_value_index2_1_4[31:0] = BVXOR(c_value_index2_1_4[31:0],x_value_index2_1)) OR (afterxor_value_index2_1_4[31:0] = BVXOR(c_value_index2_1_4[31:0],x_value_index2_2)) OR (afterxor_value_index2_1_4[31:0] = BVXOR(c_value_index2_1_4[31:0],x_value_index2_3)) ) ;
+
+ASSERT( afterxor_value_index2_0_0[63:32] = c_value_index2_0_0[63:32] ) ;
+ASSERT( afterxor_value_index2_0_1[63:32] = c_value_index2_0_1[63:32] ) ;
+ASSERT( afterxor_value_index2_0_2[63:32] = c_value_index2_0_2[63:32] ) ;
+ASSERT( afterxor_value_index2_0_3[63:32] = c_value_index2_0_3[63:32] ) ;
+ASSERT( afterxor_value_index2_0_4[63:32] = c_value_index2_0_4[63:32] ) ;
+ASSERT( afterxor_value_index2_1_0[63:32] = c_value_index2_1_0[63:32] ) ;
+ASSERT( afterxor_value_index2_1_1[63:32] = c_value_index2_1_1[63:32] ) ;
+ASSERT( afterxor_value_index2_1_2[63:32] = c_value_index2_1_2[63:32] ) ;
+ASSERT( afterxor_value_index2_1_3[63:32] = c_value_index2_1_3[63:32] ) ;
+ASSERT( afterxor_value_index2_1_4[63:32] = c_value_index2_1_4[63:32] ) ;
+
+ASSERT( middlesbox_1_value_index2_0_0 = BVXOR(afterxor_value_index2_0_0,afterxor_value_index2_0_4) ) ;
+ASSERT( middlesbox_1_value_index2_0_1 = afterxor_value_index2_0_1 ) ;
+ASSERT( middlesbox_1_value_index2_0_2 = BVXOR(afterxor_value_index2_0_2,afterxor_value_index2_0_1) ) ;
+ASSERT( middlesbox_1_value_index2_0_3 = afterxor_value_index2_0_3 ) ;
+ASSERT( middlesbox_1_value_index2_0_4 = BVXOR(afterxor_value_index2_0_4,afterxor_value_index2_0_3) ) ;
+
+ASSERT( middlesbox_2_value_index2_0_0 = (~middlesbox_1_value_index2_0_0) & middlesbox_1_value_index2_0_1 ) ;
+ASSERT( middlesbox_2_value_index2_0_1 = (~middlesbox_1_value_index2_0_1) & middlesbox_1_value_index2_0_2 ) ;
+ASSERT( middlesbox_2_value_index2_0_2 = (~middlesbox_1_value_index2_0_2) & middlesbox_1_value_index2_0_3 ) ;
+ASSERT( middlesbox_2_value_index2_0_3 = (~middlesbox_1_value_index2_0_3) & middlesbox_1_value_index2_0_4 ) ;
+ASSERT( middlesbox_2_value_index2_0_4 = (~middlesbox_1_value_index2_0_4) & middlesbox_1_value_index2_0_0 ) ;
+
+ASSERT( middlesbox_3_value_index2_0_0 = BVXOR(middlesbox_1_value_index2_0_0,middlesbox_2_value_index2_0_1) ) ;
+ASSERT( middlesbox_3_value_index2_0_1 = BVXOR(middlesbox_1_value_index2_0_1,middlesbox_2_value_index2_0_2) ) ;
+ASSERT( middlesbox_3_value_index2_0_2 = BVXOR(middlesbox_1_value_index2_0_2,middlesbox_2_value_index2_0_3) ) ;
+ASSERT( middlesbox_3_value_index2_0_3 = BVXOR(middlesbox_1_value_index2_0_3,middlesbox_2_value_index2_0_4) ) ;
+ASSERT( middlesbox_3_value_index2_0_4 = BVXOR(middlesbox_1_value_index2_0_4,middlesbox_2_value_index2_0_0) ) ;
+
+ASSERT( middlesbox_4_value_index2_0_0 = BVXOR(middlesbox_3_value_index2_0_0,middlesbox_3_value_index2_0_4) ) ;
+ASSERT( middlesbox_4_value_index2_0_1 = BVXOR(middlesbox_3_value_index2_0_0,middlesbox_3_value_index2_0_1) ) ;
+ASSERT( middlesbox_4_value_index2_0_2 = middlesbox_3_value_index2_0_2 ) ;
+ASSERT( middlesbox_4_value_index2_0_3 = BVXOR(middlesbox_3_value_index2_0_2,middlesbox_3_value_index2_0_3) ) ;
+ASSERT( middlesbox_4_value_index2_0_4 = middlesbox_3_value_index2_0_4 ) ;
+
+ASSERT( aftersbox_value_index2_0_0 = middlesbox_4_value_index2_0_0 ) ;
+ASSERT( aftersbox_value_index2_0_1 = middlesbox_4_value_index2_0_1 ) ;
+ASSERT( aftersbox_value_index2_0_2 = ~middlesbox_4_value_index2_0_2 ) ;
+ASSERT( aftersbox_value_index2_0_3 = middlesbox_4_value_index2_0_3 ) ;
+ASSERT( aftersbox_value_index2_0_4 = middlesbox_4_value_index2_0_4 ) ;
+
+ASSERT( middlelinearlayer_value_index2_0_0 = BVXOR(aftersbox_value_index2_0_0,aftersbox_value_index2_0_0[9:0]@aftersbox_value_index2_0_0[31:10]@aftersbox_value_index2_0_0[40:32]@aftersbox_value_index2_0_0[63:41]) ) ;
+ASSERT( afterlinearlayer_value_index2_0_0 = BVXOR(middlelinearlayer_value_index2_0_0,aftersbox_value_index2_0_0[45:32]@aftersbox_value_index2_0_0[63:46]@aftersbox_value_index2_0_0[13:0]@aftersbox_value_index2_0_0[31:14]) ) ;
+
+ASSERT( middlelinearlayer_value_index2_0_1 = BVXOR(aftersbox_value_index2_0_1,aftersbox_value_index2_0_1[30:0]@aftersbox_value_index2_0_1[31:31]@aftersbox_value_index2_0_1[61:32]@aftersbox_value_index2_0_1[63:62]) ) ;
+ASSERT( afterlinearlayer_value_index2_0_1 = BVXOR(middlelinearlayer_value_index2_0_1,aftersbox_value_index2_0_1[50:32]@aftersbox_value_index2_0_1[63:51]@aftersbox_value_index2_0_1[18:0]@aftersbox_value_index2_0_1[31:19]) ) ;
+
+ASSERT( middlelinearlayer_value_index2_0_2 = BVXOR(aftersbox_value_index2_0_2,aftersbox_value_index2_0_2[0:0]@aftersbox_value_index2_0_2[31:1]@aftersbox_value_index2_0_2[63:32]) ) ;
+ASSERT( afterlinearlayer_value_index2_0_2 = BVXOR(middlelinearlayer_value_index2_0_2,aftersbox_value_index2_0_2[34:32]@aftersbox_value_index2_0_2[63:35]@aftersbox_value_index2_0_2[2:0]@aftersbox_value_index2_0_2[31:3]) ) ;
+
+ASSERT( middlelinearlayer_value_index2_0_3 = BVXOR(aftersbox_value_index2_0_3,aftersbox_value_index2_0_3[36:32]@aftersbox_value_index2_0_3[63:37]@aftersbox_value_index2_0_3[4:0]@aftersbox_value_index2_0_3[31:5]) ) ;
+ASSERT( afterlinearlayer_value_index2_0_3 = BVXOR(middlelinearlayer_value_index2_0_3,aftersbox_value_index2_0_3[8:0]@aftersbox_value_index2_0_3[31:9]@aftersbox_value_index2_0_3[39:32]@aftersbox_value_index2_0_3[63:40]) ) ;
+
+ASSERT( middlelinearlayer_value_index2_0_4 = BVXOR(aftersbox_value_index2_0_4,aftersbox_value_index2_0_4[3:0]@aftersbox_value_index2_0_4[31:4]@aftersbox_value_index2_0_4[34:32]@aftersbox_value_index2_0_4[63:35]) ) ;
+ASSERT( afterlinearlayer_value_index2_0_4 = BVXOR(middlelinearlayer_value_index2_0_4,aftersbox_value_index2_0_4[51:32]@aftersbox_value_index2_0_4[63:52]@aftersbox_value_index2_0_4[19:0]@aftersbox_value_index2_0_4[31:20]) ) ;
+
+ASSERT( c_value_index2_1_0 = afterlinearlayer_value_index2_0_0 ) ;
+ASSERT( c_value_index2_1_1 = afterlinearlayer_value_index2_0_1 ) ;
+ASSERT( c_value_index2_1_2 = afterlinearlayer_value_index2_0_2 ) ;
+ASSERT( c_value_index2_1_3 = afterlinearlayer_value_index2_0_3 ) ;
+ASSERT( c_value_index2_1_4 = afterlinearlayer_value_index2_0_4 ) ;
+
+afterxor_difference_0_0: BITVECTOR(64) ;
+afterxor_difference_0_1: BITVECTOR(64) ;
+afterxor_difference_0_2: BITVECTOR(64) ;
+afterxor_difference_0_3: BITVECTOR(64) ;
+afterxor_difference_0_4: BITVECTOR(64) ;
+afterxor_difference_1_0: BITVECTOR(64) ;
+afterxor_difference_1_1: BITVECTOR(64) ;
+afterxor_difference_1_2: BITVECTOR(64) ;
+afterxor_difference_1_3: BITVECTOR(64) ;
+afterxor_difference_1_4: BITVECTOR(64) ;
+
+ASSERT( afterxor_difference_0_0 = BVXOR(afterxor_value_index1_0_0,afterxor_value_index2_0_0) ) ;
+ASSERT( afterxor_difference_0_1 = BVXOR(afterxor_value_index1_0_1,afterxor_value_index2_0_1) ) ;
+ASSERT( afterxor_difference_0_2 = BVXOR(afterxor_value_index1_0_2,afterxor_value_index2_0_2) ) ;
+ASSERT( afterxor_difference_0_3 = BVXOR(afterxor_value_index1_0_3,afterxor_value_index2_0_3) ) ;
+ASSERT( afterxor_difference_0_4 = BVXOR(afterxor_value_index1_0_4,afterxor_value_index2_0_4) ) ;
+ASSERT( afterxor_difference_1_0 = BVXOR(afterxor_value_index1_1_0,afterxor_value_index2_1_0) ) ;
+ASSERT( afterxor_difference_1_1 = BVXOR(afterxor_value_index1_1_1,afterxor_value_index2_1_1) ) ;
+ASSERT( afterxor_difference_1_2 = BVXOR(afterxor_value_index1_1_2,afterxor_value_index2_1_2) ) ;
+ASSERT( afterxor_difference_1_3 = BVXOR(afterxor_value_index1_1_3,afterxor_value_index2_1_3) ) ;
+ASSERT( afterxor_difference_1_4 = BVXOR(afterxor_value_index1_1_4,afterxor_value_index2_1_4) ) ;
+
+ASSERT( afterxor_difference_1_0 = 0hex0000000000000000 ) ;
+ASSERT( afterxor_difference_1_1 = 0hex0000000000000000 ) ;
+ASSERT( afterxor_difference_1_2 = 0hex0000000000000000 ) ;
+ASSERT( afterxor_difference_1_3 = 0hex0000000000000000 ) ;
+ASSERT( afterxor_difference_1_4 = 0hex0000000000000000 ) ;
+
+ASSERT( NOT(afterxor_difference_0_0@afterxor_difference_0_1@afterxor_difference_0_2@afterxor_difference_0_3@afterxor_difference_0_4 = 0hex00000000000000000000000000000000000000000000000000000000000000000000000000000000) ) ;
+
+ASSERT( c_value_index1_0_0 = c_value_index2_0_0 ) ;
+ASSERT( c_value_index1_0_1 = c_value_index2_0_1 ) ;
+ASSERT( c_value_index1_0_2 = c_value_index2_0_2 ) ;
+ASSERT( c_value_index1_0_3 = c_value_index2_0_3 ) ;
+ASSERT( c_value_index1_0_4 = c_value_index2_0_4 ) ;
+
+ASSERT( x_value_index1_0 = x_value_index2_0 ) ;
+ASSERT( x_value_index1_1 = x_value_index2_1 ) ;
+ASSERT( x_value_index1_2 = x_value_index2_2 ) ;
+ASSERT( x_value_index1_3 = x_value_index2_3 ) ;
+
+ASSERT( NOT(c_value_index1_0_0@c_value_index1_0_1@c_value_index1_0_2@c_value_index1_0_3@c_value_index1_0_4 = 0hex00000000000000000000000000000000000000000000000000000000000000000000000000000000) ) ;
+
+QUERY(FALSE) ;
+COUNTEREXAMPLE ;
